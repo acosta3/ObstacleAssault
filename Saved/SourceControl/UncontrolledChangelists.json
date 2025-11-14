@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/antho/Desktop/UnrealEngineProjects/ObstacleAssault/Content/Levels/ObstacleAssault.umap"
+				"C:/Users/antho/Desktop/UnrealEngineProjects/ObstacleAssault/Content/Levels/ObstacleAssault.umap",
+				"C:/Users/antho/Desktop/UnrealEngineProjects/ObstacleAssault/Content/MyBlueprints/BP_MovingPlatForm.uasset"
 			]
 		}
 	]

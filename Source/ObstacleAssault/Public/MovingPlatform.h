@@ -34,5 +34,11 @@ public:
 	FVector PlatformVelocity = FVector(0.0f,0.0f,0.0f);
 
 
+	UPROPERTY(VisibleAnywhere)
+	float DistanceTravel = 0.0f;
+
+	FVector StartLocation;
+
+
 	
 };

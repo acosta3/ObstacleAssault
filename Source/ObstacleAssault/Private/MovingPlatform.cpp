@@ -17,7 +17,7 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 
 	FVector TestVector = FVector(1110.0f,-610.0f,440.0f);
-
+	StartLocation = GetActorLocation();
 	
 
 	
@@ -42,6 +42,8 @@ void AMovingPlatform:: MovePlatform(float DeltaTime) {
 	// The value 100 is the speed of the platform
 	CurrentLocation += (PlatformVelocity * DeltaTime);
 	SetActorLocation(CurrentLocation);
+
+	DistanceTravel = FVector::Dist(StartLocation, CurrentLocation);
 
 }
 
