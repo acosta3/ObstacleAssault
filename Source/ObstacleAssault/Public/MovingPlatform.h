@@ -29,6 +29,10 @@ public:
 	void RotatePlatform(float DeltaTime);
 
 
+	UPROPERTY(EditAnywhere)
+	float MoveDistance = 100.0f;
+
+
 	// FVector PlatformVelocity;
 	UPROPERTY(EditAnywhere)
 	FVector PlatformVelocity = FVector(0.0f,0.0f,0.0f);
