@@ -31,8 +31,9 @@ void AMovingPlatform::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	FVector CurrentLocation = GetActorLocation();
-
-	CurrentLocation.X += 1;
+	// by Introducing DeltaTime, we make movement framerate independent 
+	// The value 100 is the speed of the platform
+	CurrentLocation.X += (100* DeltaTime);
 
 	SetActorLocation(CurrentLocation);
 
