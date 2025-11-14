@@ -18,7 +18,7 @@ void AMovingPlatform::BeginPlay()
 
 	FVector TestVector = FVector(1110.0f,-610.0f,440.0f);
 
-	SetActorLocation(MyVector);
+	
 
 	
 
@@ -30,8 +30,16 @@ void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	MyVector.Z = MyVector.Z + 1;
-	SetActorLocation(MyVector);
+	FVector CurrentLocation = GetActorLocation();
+
+	CurrentLocation.X += 1;
+
+	SetActorLocation(CurrentLocation);
+
+
+
+	
+	
 
 
 }
