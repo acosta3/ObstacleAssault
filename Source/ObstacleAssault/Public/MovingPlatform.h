@@ -41,6 +41,12 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	float DistanceTravel = 0.0f;
 
+
+	float GetDistanceMoved();
+
+	UPROPERTY(EditAnywhere)
+	FRotator RotationVelocity;
+
 	FVector StartLocation;
 
 
